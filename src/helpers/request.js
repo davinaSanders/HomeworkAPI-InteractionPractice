@@ -5,11 +5,13 @@ const Request = function (url) {
 Request.prototype.get = function (onComplete) {
   const xhr = new XMLHttpRequest();
   xhr.open('GET', this.url);
+  xhr.setRequestHeader('Accept', 'application/json');
   xhr.addEventListener('load', function() {
     if(this.status !== 200){
+      console.err(xhr.status);
       return;
     }
-    const data = JSON.parse(this.responseText);
+    const data = JSON.parse(xhr.responseText);
     onComplete(data);
   });
   xhr.send();

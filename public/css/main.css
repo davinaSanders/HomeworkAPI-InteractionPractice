@@ -1,0 +1,18 @@
+body {
+  background-image: url("./images/background.png");
+}
+
+.dropdowns {
+  margin:10rem;
+  align-content: center;
+}
+select {
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
