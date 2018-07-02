@@ -3,23 +3,36 @@
   <head>
     <meta charset="utf-8">
     <script src="js/bundle.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.png">
     <title>Studio Ghibli</title>
   </head>
   <body>
+    <h1>Studio Ghibli</h1>
     <div class="films">
     </div>
     <div class="dropdowns">
+      <label for="people-dropdown">Choose a Character</label>
       <select id="people-dropdown" placeholder="choose a character">
+         <option selected disabled>Characters</option>
       </select>
+      <label for="species-dropdown">Choose a Creature</label>
       <select id="species-dropdown" placeholder="choose a creature">
+        <option selected disabled>Creatures</option>
       </select>
+      <label for="places-dropdown">Choose a Place</label>
       <select id="places-dropdown" placeholder="choose a location">
+        <option selected disabled>Places</option>
       </select>
     </div>
     <div class="results">
-      <p id="person-result"></p>
-      <p id="creature-result"></p>
-      <p id="location-result"></p>
+      <p class="column" id="person-result"></p>
+      <p class="column" id="creature-result"></p>
+      <p class="column" id="location-result"></p>
     </div>
+    <form class="find-movie" action="index.html" method="post">
+      <input type="text" name="field" placeholder="e.g. Totoro" value="">
+      <input type="submit" name="submit" value="">
+    </form>
   </body>
 </html>

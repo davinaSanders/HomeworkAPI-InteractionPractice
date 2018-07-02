@@ -29,6 +29,7 @@ ResultView.prototype.generatePersonDetails = function (person, container) {
   console.log(person);
 
   const unorderedList = this.createElement('ul');
+  unorderedList.style = "list-style-type:none";
   container.appendChild(unorderedList);
 
   const listHeaderName = this.createElement('lh', person.name);
@@ -51,6 +52,7 @@ ResultView.prototype.generateLocationDetails = function (place, container) {
   console.log(place);
 
   const unorderedList = this.createElement('ul');
+  unorderedList.style = "list-style-type:none";
   container.appendChild(unorderedList);
 
   const listHeaderName = this.createElement('lh', place.name);
@@ -72,6 +74,7 @@ ResultView.prototype.generateCreatureDetails = function (creature, container) {
   console.log(creature);
 
   const unorderedList = this.createElement('ul');
+  unorderedList.style = "list-style-type:none";
   container.appendChild(unorderedList);
 
   const listHeaderName = this.createElement('lh', creature.name);

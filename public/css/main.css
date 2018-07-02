@@ -1,14 +1,56 @@
 body {
-  background-image: url("./images/background.png");
+  background-image: url("../images/background.png");
+  opacity: 0.9;
+}
+
+h1 {
+  text-align: center;
+  color: hotpink;
+}
+
+option:hover {
+  color: hotpink;
+  font-size: 
+}
+
+lh {
+  align-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+li {
+  font-size: 1.3em;
+  color: hotpink;
+  align-content: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.column {
+  padding: 0px;
+  text-align: center;
+  width: 33.33%;
 }
 
 .dropdowns {
   margin:10rem;
   align-content: center;
 }
-select {
+
+label {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+
+select label {
   flex-wrap: wrap;
+  align-items: stretch;
   align-content: center;
+  margin-left: 6em;
+  margin-right: 6em;
+  width: 15em;
+  height: 1.9em;
+  font-size: 0.7em;
 }
 
 div {
